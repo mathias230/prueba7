@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetuchini Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Modal para las imágenes de la galería -->
+<div id="modal-imagen" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span> <!-- Botón de cierre dentro del contenedor -->
+        <div class="modal-image">
+            <img src="" alt="Imagen modal">
+        </div>
+        <div class="modal-info">
+            <h2>Título del Modal</h2>
+            <p>Descripción del Modal</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Navegación -->
+<nav class="navbar">
+    <div class="logo">FETUCHINI STUDIOS</div>
+    <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#gallery">GALERÍA</a></li>
+        <li><a href="#about">SOBRE NOSOTROS</a></li>
+        <li><a href="#contact">CONTÁCTANOS</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Sección Principal (Inicio) -->
+    <header id="inicio">
+        <div class="hero" data-aos="fade-up">
+            <h1>Libera tu creatividad</h1>
+            <p>Libera tu imaginación</p>
+            <a href="#gallery" class="cta-button">Ver Dibujos</a>
+        </div>
+    </header>
+
+    <!-- Sección de galería -->
+<section id="gallery" class="gallery-preview" data-aos="fade-in">
+    <div class="gallery-header">
+        <h1>Galería</h1>
+        <p>Los mejores dibujos aquí</p>
+    </div>
+
+    <h2>Míralos por ti mismo</h2>
+    <div class="image-grid">
+        <div class="image-item" data-title="¡Conoce más sobre Imagen 1!" data-info="Descripción de la imagen 1" data-img="images/imagen1.png" onclick="openModal(this)">
+            <img src="images/imagen1.png" alt="Imagen 1">
+            <p>Imagen 1</p>
+        </div>
+        <div class="image-item" data-title="¡DOOM!" data-info="Autor: Nicolas Moreno (@Namt.2141)
+        Descripción: Un simple Pixel art inspirado en el videojuego Doom Eternal
+        Materiales: Creador de pixel art Pixilart
+        Fecha de creación: 5/9/2024
+        Cual fue la inspiración: El Videojuego Doom Eternal y un estilo pixel art simple" data-img="images/imagen2.png" onclick="openModal(this)">
+            <img src="images/imagen2.png" alt="Imagen 2">
+            <p>Imagen 2</p>
+        </div>
+        <div class="image-item" data-title="¡Conoce más sobre Imagen 3!" data-info="Descripción de la imagen 3" data-img="images/imagen3.png" onclick="openModal(this)">
+            <img src="images/imagen3.png" alt="Imagen 3">
+            <p>Imagen 3</p>
+        </div>
+    </div>
+
+    <!-- Botón Ver Más -->
+    <div class="gallery-more">
+        <a href="nueva-pagina.html" class="btn-ver-mas">Ver Más</a>
+    </div>
+</section>
+
+    <!-- Sección About -->
+    <section id="about" class="about-section" data-aos="fade-left">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>SOBRE NOSOTROS</h2>
+                <h3>Descubre Nuestra Historia</h3>
+                <p>
+                    FETUCHINI STUDIOS, creado en la ciudad de QUITO el 5 de agosto, la idea nacio por una llamada y creamos una compañia virtual de dibujo porque estabamos aburridos. Recien empezamos pero con el tiempo creceremos y alcanzaremos todas nuestras metas
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/about-image.png" alt="About us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section" data-aos="fade-right">
+        <h2>Contactanos</h2>
+        <p>Nos serviria de mucha ayuda tus sugerencias para seguir mejorando la pagina.:</p>
+        <ul>
+            <li>Email: Fetuchinisugerencias@gmail.com</li>
+            <li>Instagram: <a href="https://www.instagram.com/estudios_fetuchini_productossa/?igsh=aHQ5aHp3c24xandk" target="_blank">@fetuchinistudios</a></li>
+        </ul>
+    </section>
+
+    <!-- Botón Scroll to Top -->
+    <button onclick="scrollToTop()" id="scrollBtn">⬆</button>
+
+    <!-- Footer -->
+    <footer>
+        <p> Pagina Desarrollada y diseñada por: Mathias Espinel</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+<!-- Modal de Aviso Importante -->
+<div id="aviso-modal" class="modal-aviso">
+    <div class="modal-content-aviso">
+        <span class="close-button-aviso">&times;</span>
+        <h2>AVISO IMPORTANTE</h2>
+        <p>
+            Esta es una página desarrollada y diseñada por una sola persona. Me serviría mucho que enviaras tus sugerencias o informes de errores a este correo: Fetuchinisugerencias@gmail.com
+        </p>
+        <button id="entendidoBtn" class="btn-aceptar">Entendido</button>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
